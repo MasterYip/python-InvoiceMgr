@@ -1,0 +1,7 @@
+Database/
+dist/
+build/
+Output/
+invoicemgr.spec
+log.txt
+release/

@@ -1,0 +1,1 @@
+E:/Software/IDE/Anaconda3/python.exe  ./invoicemgr.py
