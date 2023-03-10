@@ -2,7 +2,7 @@
 Author: MasterYip 2205929492@qq.com
 Date: 2023-02-22 16:17:57
 LastEditors: MasterYip 2205929492@qq.com
-LastEditTime: 2023-03-10 13:29:39
+LastEditTime: 2023-03-10 16:05:01
 FilePath: \comprehensive-coding\InvoiceMgr\invoicemgr.py
 Description: InvoiceMgr Ver1.0
 
@@ -314,7 +314,7 @@ class APP(object):
         函数说明:loop等待用户事件
         """
         # 禁止修改窗口大小
-        self.root.resizable(False, False)
+        self.root.resizable(True, True)
         # 窗口居中
         self.center()
         self.root.mainloop()
