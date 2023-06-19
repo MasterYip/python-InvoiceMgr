@@ -1,4 +1,5 @@
 {
     "OUTPUT_DIR": "",
-    "DB_DIR": ""
+    "DB_DIR": "",
+    "PDF_JPG_QUALITY": 30
 }

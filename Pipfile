@@ -8,7 +8,7 @@ json5 = "*"
 windnd = "*"
 pyzbar = "*"
 pillow = "*"
-pymupdf = "*"
+pymupdf = "1.22.0"
 
 [dev-packages]
 
