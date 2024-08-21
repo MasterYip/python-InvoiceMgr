@@ -1,9 +1,9 @@
 '''
 Author: MasterYip 2205929492@qq.com
 Date: 2023-02-22 16:17:57
-LastEditors: MasterYip 2205929492@qq.com
-LastEditTime: 2023-06-19 16:20:44
-FilePath: \comprehensive-coding\InvoiceMgr\invoicemgr.py
+LastEditors: MasterYip
+LastEditTime: 2024-08-21 16:13:06
+FilePath: /InvoiceMgr/invoicemgr.py
 Description: InvoiceMgr Ver1.0
 
 Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
@@ -22,8 +22,7 @@ import windnd
 import fitz  # fitz就是pip install PyMuPDF
 from pyzbar.pyzbar import decode
 from PIL import Image
-import time
-from tqdm import trange
+# from tqdm import trange
 # Directory Management
 try:
     # Run in Terminal
@@ -530,7 +529,7 @@ class APP(object):
         # img output
         self.logger.info("Images Outputing...")
         index_ls = self.listbox.curselection()
-        for i in trange(len(index_ls)):
+        for i in range(len(index_ls)):
             self.info_disp.set("Outputing Img: "+str(i)+"/"+str(len(index_ls)))
             self.root.update()
             self.itemlist[index_ls[i]].invoice_files_output(
@@ -538,7 +537,7 @@ class APP(object):
         # pdf output
         self.logger.info("PDF Outputing...")
         doc = fitz.open()
-        for i in trange(len(index_ls)):
+        for i in range(len(index_ls)):
             self.info_disp.set("Outputing PDF: "+str(i)+"/"+str(len(index_ls)))
             self.root.update()
             self.itemlist[index_ls[i]].invoice_files_output_pdf(
